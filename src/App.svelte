@@ -13,24 +13,6 @@
   </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <div class="footer-section">
     <div class="footer-item">
       <h2>webtest</h2>
@@ -41,7 +23,8 @@
     </div>
     <div class="footer-item">
       <h2>About webtest</h2>
-      <p>WebPerform was developed as a tool for customers to easily test the performance of their webpages.
+      <p>WebPerform was developed as a tool for customers <br>
+        to easily  test the performance of their webpages. <br>
         Want to work with us? Check out our Careers page</p>
 
     </div>
@@ -110,7 +93,7 @@
 
 .footer-section h2::after{
   content: '';
-  width: 4rem;
+  width: 3rem;
   height: .2rem;
   background:#e65b00;
   position: absolute;
@@ -118,6 +101,7 @@
   left: 0;
 
 }
+
 .footer-section p{
   transition: all .2s linear;
   margin-bottom: .6em;
@@ -126,11 +110,12 @@ a{
   color: white;
   text-decoration: none;
   cursor: pointer;
+  
 
 }
 .footer-section p:hover{
   transition: all .2s linear;
-  transition: translatex(4px);
+  transition: translateX(4px);
 }
 
 .footer-section a:hover{
@@ -151,10 +136,21 @@ a{
 .footer-item li{
   margin-right: 1rem;
 }
-
+.social ul li {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all .2s linear;
+}
 .social ul li:hover{
   color:  #e65b00;
   transform: scale(1.1);
   transition: all .2s linear;
+}
+@media screen and (max-width: 320px){
+  .footer-section{
+    flex-direction: column;
+    justify-content: flex-start;
+   padding-left: 2rem; 
+  }
 }
 </style>
