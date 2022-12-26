@@ -10,12 +10,28 @@
     <a href="#news">News</a>
     <a href="#contact">Contact</a>
     <a href="#about">About</a>
+    
   </div>
+  
+
+<h1>
+
+Home page content
+
+</h1>
 
 
+
+<h1>
+
+
+Serach box
+
+</h1>
   <div class="footer-section">
     <div class="footer-item">
       <h2>webtest</h2>
+      <br>
     <p><a href="About-us">About us</a></p>
     <p><a href="Contact US">Contact us</a></p>
     <p><a href="Get started">Get started</a></p>
@@ -23,6 +39,7 @@
     </div>
     <div class="footer-item">
       <h2>About webtest</h2>
+      <br>
       <p>WebPerform was developed as a tool for customers <br>
         to easily  test the performance of their webpages. <br>
         Want to work with us? Check out our Careers page</p>
@@ -31,6 +48,7 @@
 
     <div class="footer-item social">
       <h2>Follow us</h2>
+      <br>
       <ul>
         <li><i class="fa-brands fa-instagram"></i></li>
         <li><i class="fa-brands fa-linkedin-in"></i></li>
@@ -52,8 +70,10 @@
 
 
 <style>
+
 /* Navigation bar */
 .navigation{
+  max-width: 100%;
   background-color: #333;
   overflow: hidden;
 }
@@ -83,7 +103,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 1rem 0;
-  background-color: rgb(32, 30, 30);
+  background-color: #333;
 }
 .footer-section h2{
   margin-bottom: 1rem;
