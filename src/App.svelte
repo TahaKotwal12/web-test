@@ -12,22 +12,24 @@
     <a href="#about">About</a>
     
   </div>
+<div class="heading">
+  <h2>Get to know how your website is working</h2>
+ 
+</div>
+
+<div class="heading2">
+  <h3> Enter your web address in the box to get started</h3>
+</div>
+
+
+<div class="main">
+  <form action="">
+    <input type="url" name="url" id="url" placeholder="">
+    <label for="url" class="link">Please enter valid url or IP address</label>
+    <span class="enter"></span>
+  </form>
   
-
-<h1>
-
-Home page content
-
-</h1>
-
-
-
-<h1>
-
-
-Serach box
-
-</h1>
+</div>
   <div class="footer-section">
     <div class="footer-item">
       <h2>webtest</h2>
@@ -71,6 +73,56 @@ Serach box
 
 <style>
 
+  .main{
+    text-align: center;
+    position: relative;
+    margin: 100px;
+    background-color: #f2eee3;
+  }
+  .link{
+    position: absolute;
+    left: 25%;
+    top: 10px;
+    font-weight: 200;
+    color: #cecece ;
+    transition: all 0.5s ease;
+    pointer-events: none;
+
+
+  }
+  .input{
+  max-width: 100%;
+  margin: auto;
+  
+  }
+  input{
+    padding-top: 30px;
+    
+    border: 2px solid grey;
+    border-radius: 5px;
+  }
+  .heading{
+    max-width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  h2{
+    padding-top: 40px;
+  }
+  h2{
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: #f46d13;
+  }
+  h3{
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: #f46d13;
+    padding-top: 30px;
+  }
+
 /* Navigation bar */
 .navigation{
   max-width: 100%;
@@ -88,7 +140,7 @@ Serach box
   transition: 0.4s;
 }
 .navigation a:hover{
-  color: blue;
+  color: #f46d13;
 
 }
 
