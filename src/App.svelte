@@ -34,7 +34,7 @@
     <div class="footer-item">
       <h2>webtest</h2>
       <br>
-    <p><a href="About-us">About us</a></p>
+    <p><a href="about.svelte">About us</a></p>
     <p><a href="Contact US">Contact us</a></p>
     <p><a href="Get started">Get started</a></p>
     <p><a href="Our services">Our services</a></p>
@@ -60,16 +60,9 @@
     </div>
   </div>
 </main>
+<!-- html ends over here -->
 
-
-
-
-
-
-
-
-
-
+<!-- Styling starts from here -->
 
 <style>
 
