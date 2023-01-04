@@ -24,17 +24,17 @@
 
 <div class="main">
   <form action="">
-    <input type="url" name="url" id="url" placeholder="">
-    <label for="url" class="link">Please enter valid url or IP address</label>
+    <label for="url" class="link"></label>
+    <input type="url" name="url" id="url" placeholder=" Please enter valid url or IP address">
     <span class="enter"></span>
   </form>
-  
 </div>
+
   <div class="footer-section">
     <div class="footer-item">
       <h2>webtest</h2>
       <br>
-    <p><a href="about.svelte">About us</a></p>
+    <p><a href="">About us</a></p>
     <p><a href="Contact US">Contact us</a></p>
     <p><a href="Get started">Get started</a></p>
     <p><a href="Our services">Our services</a></p>
@@ -68,7 +68,7 @@
 
   .main{
     text-align: center;
-    position: relative;
+    position: center;
     margin: 100px;
     background-color: #f2eee3;
   }
@@ -80,18 +80,12 @@
     color: #cecece ;
     transition: all 0.5s ease;
     pointer-events: none;
-
-
   }
-  .input{
-  max-width: 100%;
-  margin: auto;
-  
-  }
+
   input{
     padding-top: 30px;
-    
-    border: 2px solid grey;
+    width: 80%;
+    border: 2px solid rgb(242, 242, 247);
     border-radius: 5px;
   }
   .heading{
