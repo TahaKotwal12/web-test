@@ -1,9 +1,9 @@
 <script>
  import About from "./about.svelte";
-  import { Router, Route } from 'svelte-routing';
+  
   import Footer from "./footer.svelte";
   import Nav from "./nav.svelte";
-  import { navigate } from 'svelte-routing';
+  
 </script>
 <main>
   <nav></nav>
