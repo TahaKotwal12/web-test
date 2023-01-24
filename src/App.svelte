@@ -7,7 +7,6 @@
   }
 </script>
 
-<button on:click={handleClick}>Click me</button>
 
 
 <main>
@@ -22,7 +21,11 @@
   <form action="">
     <label for="url" class="link"></label>
     <input type="url" name="url" id="url" placeholder=" Please enter valid url or IP address">
+    
     <span class="enter"></span>
+    
+    
+<button on:click={handleClick}>Click me</button>
   </form>
 </div>
 
@@ -39,7 +42,7 @@
 
   .main{
     text-align: center;
-    position: center;
+    /* position: ; */
     margin: 100px;
     background-color: #f2eee3;
   
@@ -61,6 +64,7 @@
     border-radius: 5px;
     text-align: center;
     height: 8px;
+    
   }
   .heading{
     max-width: 100%;
@@ -85,12 +89,16 @@
   }
 
   button {
+    display: block;
+    position: relative;
     background-color: #8B2500;
     color: #FFFFFF;
+    padding-top: 12px;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: auto;
+    margin-top: 12px;
     border: 2px;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
     font-size: 1.2em;
     transition: background-color 0.2s ease-in;
