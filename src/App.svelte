@@ -38,6 +38,7 @@
     position: center;
     margin: 100px;
     background-color: #f2eee3;
+  
   }
   .link{
     position: absolute;
@@ -50,10 +51,12 @@
   }
 
   input{
-    padding-top: 30px;
-    width: 80%;
+    padding: 25px;
+    width: 50%;
     border: 2px solid rgb(242, 242, 247);
     border-radius: 5px;
+    text-align: center;
+    height: 8px;
   }
   .heading{
     max-width: 100%;

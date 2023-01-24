@@ -12,5 +12,38 @@
     "@sveltejs/vite-plugin-svelte": "^2.0.0",
     "svelte": "^3.54.0",
     "vite": "^4.0.0"
-  }
+  },
+  "description": "This template should help get you started developing with Svelte in Vite.",
+  "main": "vite.config.js",
+  "dependencies": {
+    "debug": "^4.3.4",
+    "deepmerge": "^4.2.2",
+    "esbuild": "^0.16.10",
+    "is-core-module": "^2.11.0",
+    "magic-string": "^0.27.0",
+    "function-bind": "^1.1.1",
+    "nanoid": "^3.3.4",
+    "has": "^1.0.3",
+    "picocolors": "^1.0.0",
+    "postcss": "^8.4.20",
+    "resolve": "^1.22.1",
+    "rollup": "^3.8.1",
+    "source-map-js": "^1.0.2",
+    "supports-preserve-symlinks-flag": "^1.0.0",
+    "svelte-hmr": "^0.15.1",
+    "kleur": "^4.1.5",
+    "vitefu": "^0.2.4",
+    "ms": "^2.1.2",
+    "path-parse": "^1.0.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TahaKotwal12/web-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TahaKotwal12/web-test/issues"
+  },
+  "homepage": "https://github.com/TahaKotwal12/web-test#readme"
 }
