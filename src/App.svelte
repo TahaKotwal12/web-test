@@ -2,9 +2,13 @@
     import About from "./about.svelte";
     import Footer from "./footer.svelte";
     import Nav from "./nav.svelte";
-
-
+  function handleClick() {
+    console.log("Button clicked");
+  }
 </script>
+
+<button on:click={handleClick}>Click me</button>
+
 
 <main>
  <Nav></Nav>
@@ -78,6 +82,21 @@
     text-decoration: none;
     color: #f46d13;
     padding-top: 30px;
+  }
+
+  button {
+    background-color: #8B2500;
+    color: #FFFFFF;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.2s ease-in;
+  }
+  button:hover {
+    background-color: #8B1A1A;
   }
 
 /* Navigation bar */
