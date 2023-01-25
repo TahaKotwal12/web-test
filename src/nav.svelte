@@ -6,17 +6,14 @@
     <a href="#news">News</a>
     <a href="#contact">Contact</a>
     <a href="#about">About</a>
-    
   </div>
 </main>
-
 <style>
   .navigation{
   max-width: 100%;
   background-color: #333;
   overflow: hidden;
 }
- 
 .navigation a{
   float: left;
   color: #f2f2f2;

@@ -5,6 +5,55 @@
   function handleClick() {
     console.log("Button clicked");
   }
+  let url ='';
+  let error = '';
+  let data = null;
+let key="AIzaSyA3CaJH8AXwk4hUpiYdbRuyESLZ9lpXrx8";
+  let display = false;
+
+  function inputurl(event) {
+    url = event.target.value;
+    console.log(url)
+  }
+
+  async function fetchdata(event) {
+    event.preventDefault();
+    validateUrl(url);
+    if (error) {
+      alert(error);
+    } else {
+
+     await  fetch('https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url='+url).then(response => {
+        return response.json();
+      }).then(data => {
+        console.log(data);
+      data = JSON.stringify(data);
+      alert('Displaying on the Div');
+        document.getElementById("resultJson").innerText =data;
+      });
+      alert('success line no 45');
+      
+
+
+
+    }
+  }
+
+
+
+  function validateUrl(value) {
+    if (!value.match(/^(https?:\/\/)/)) {
+      error = 'Please enter a valid URL';
+    } else {
+      error = '';
+      
+    }
+  }
+
+  
+ 
+  console.log(url)
+
 </script>
 
 
@@ -20,12 +69,66 @@
 <div class="main">
   <form action="">
     <label for="url" class="link"></label>
-    <input type="url" name="url" id="url" placeholder=" Please enter valid url or IP address">
-    
+    <!-- <input type="url" name="url" id="url" placeholder="  or IP address"> -->
+    <input type="url" id="url" bind:value={url} on:input={inputurl} placeholder="Please enter valid url like  https://example.com">
     <span class="enter"></span>
+  
+
+    <button type="submit" on:click={fetchdata}>Submit</button>
     
+    <div class="data">
+      
+      
+      {#if data!=null}
+      {data.id}
+      this is data
+      {/if}
+      </div>
+      <div id="resultJson">
+        <div class="cards">
+          <div class="card card-1">
+            <p id="name1">Captcha ??</p>
+            <div id="captcha1">
+              
+            </div>
+          </div>
+          <div class="card card-2">
+            <p id="name2">Any Error Message ??</p>
+            <div id="captcha2">
+            </div>
+          </div>
+          <div class="card card-3">
+            <p id="name3">Captcha ??</p>
+            <div id="captcha3">
+            </div>
+          </div>
+          <div class="card card-4">
+            <p id="name4">Captcha ??</p>
+            <div id="captcha4">
+            </div>
+          </div>
+          <div class="card card-5">
+            <p id="name5">Captcha ??</p>
+            <div id="captcha5">
+            </div>
+          </div>
+          <div class="card card-1">
+            <p id="name1">Captcha ??</p>
+            <div id="captcha6">
+            </div>
+          </div>
+      
+      
+      </div>
+      </div>
+      
+      <br>
+      <div id="resultJson" style="background-color:brown ;width:100%" >
+      
+      </div>
     
-<button on:click={handleClick}>Click me</button>
+  > 
+    
   </form>
 </div>
 
